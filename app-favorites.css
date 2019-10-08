@@ -1,25 +1,30 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background-color: black;
 }
 
 #home {
     width: 150px;
     height: 50px;
-    background-color: rgb(73, 226, 43);
+    background-color: grey;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
+    outline: 1px;
+    outline-color: black;
+    outline-style: ridge;
+    outline-offset: -3px;
 }
 
 #home:hover {
     width: 150px;
     height: 150px;
-    background-color: rgb(73, 226, 43);
+    background-color: lightblue;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
+    outline: 0px;
 }
 
 .grow {
@@ -35,61 +40,77 @@ body {
 #app1 {
     width: 300px;
     height: 50px;
-    background-color: rgb(73, 226, 43);
+    background-color: grey;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
     overflow: hidden;
+    outline: 1px;
+    outline-color: black;
+    outline-style: ridge;
+    outline-offset: -3px;
 }
 
 #app1:hover {
     width: 1200px;
     height: 900px;
-    background-color: rgb(73, 226, 43);
+    background-color: #FB000F;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
     overflow: hidden;
+    border-radius: 0px;
+    outline: 0px;
 }
 
 #app2 {
     width: 300px;
     height: 50px;
-    background-color: rgb(73, 226, 43);
+    background-color: grey;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
     overflow: hidden;
+    outline: 1px;
+    outline-color: black;
+    outline-style: ridge;
+    outline-offset: -3px;
 }
 
 #app2:hover {
     width: 1200px;
     height: 900px;
-    background-color: rgb(73, 226, 43);
+    background-color: #171A21;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
     overflow: hidden;
+    outline: 0px;
 }
 
 #app3 {
     width: 300px;
     height: 50px;
-    background-color: rgb(73, 226, 43);
+    background-color: grey;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
     overflow: hidden;
+    outline: 1px;
+    outline-color: black;
+    outline-style: ridge;
+    outline-offset: -3px;
 }
 
 #app3:hover {
     width: 1200px;
     height: 900px;
-    background-color: rgb(73, 226, 43);
+    background-color: #61369F;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
     overflow: hidden;
+    outline: 0px;
 }
 
 .flexrow {
@@ -106,6 +127,14 @@ body {
     height: 100%;
 }
 
+.dropdowncontent:hover {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    animation-play-state: running;
+}
+
 .title {
     text-align: center;
     font-weight: bold;
@@ -116,8 +145,7 @@ body {
     background-image: url("ressources/youtube.png");
     background-repeat: no-repeat;
     background-position: center;
-    animation-delay: 2s;
-    animation-name: dim;
+    animation-name: dimy;
     animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -125,16 +153,87 @@ body {
     height: 100%;
 }
 
-@keyframes dim {
-    0% { 
-        filter: brightness(1); 
+.paddingapp {
+    justify-content: auto;
+}
+
+@keyframes dimy {
+    0% {
+        background-image: url("ressources/youtube100.png");
     }
-    100% { 
-        filter: brightness(0.5);    }
-  }
+    100% {
+        background-image: url("ressources/youtube75.png");
+    }
+}
+
+#steam {
+    background-image: url("ressources/youtube.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fill;
+    animation-name: dims;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes dims {
+    0% {
+        background-image: url("ressources/steam100.png");
+    }
+    100% {
+        background-image: url("ressources/steam75.png");
+    }
+}
+
+#twitch {
+    background-image: url("ressources/youtube.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: dimt;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes dimt {
+    0% {
+        background-image: url("ressources/twitch100.png");
+    }
+    100% {
+        background-image: url("ressources/twitch75.png");
+    }
+}
 
 .txtyoutube {
     color: white;
     animation: none;
     filter: brightness(1);
+    height: 717px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.contenttop {
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+    margin-top: 10%
+}
+
+.contentbot {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
