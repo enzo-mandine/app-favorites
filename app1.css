@@ -1,0 +1,182 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    height: 5rem;
+    background-color: grey;
+    padding-left: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+#home {
+    width: 150px;
+    height: 50px;
+    background-image: url(ressources/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#home:hover {
+    width: 150px;
+    height: 150px;
+    background-image: url(ressources/home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    background-color: grey;
+    padding-top: 2rem;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 10;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover :not(p) :not(div) :not(img) :not(a) {
+    transform: scale(1, 10);
+    transform-origin: top center;
+    transition-duration: 0.7s;
+}
+
+#logo>img {
+    height: 5rem;
+    width: auto;
+}
+
+#searchbar {
+    border-radius: 15px;
+    width: 600px;
+    height: 30px;
+    border: none;
+}
+
+#search {
+    margin-top: 2rem;
+}
+
+#video {
+    width: 1174px;
+    height: 671px;
+    margin-top: 3rem;
+}
+
+#videocontent {
+    width: 1174px;
+    height: 671px;
+    margin-top: 3rem;
+}
+
+#browse {
+    width: 600px;
+    margin-top: 3rem;
+    border-spacing: 5px;
+    overflow: hidden;
+}
+
+#browse>tbody {
+    background-color: bisque;
+}
+
+.browse-image {
+    width: 40%;
+    height: 10rem;
+    padding: 0;
+    background-position: center;
+}
+
+.browse-txt {
+    height: 80px;
+    padding: 0;
+}
+
+#description {
+    width: 1174px;
+    margin-top: 2rem;
+}
+
+#presentation {
+    width: 1174px;
+    height: 600px;
+    margin-top: 2rem;
+}
+
+.row-collum {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+#align {
+    justify-content: space-around;
+}
+
+.video-title {
+    font-weight: bold;
+}
+
+.video-info {
+    color: grey;
+}
+
+.icons {
+    width: auto;
+    height: 100px;
+}
+
+#ricardo {
+    background-image: url(ressources/ricardo.jpg);
+    background-size: 300px;
+}
+
+#nyan {
+    background-image: url(ressources/nyan.png);
+    background-size: 300px;
+}
+
+#star {
+    background-image: url(ressources/star.jpg);
+    background-size: 300px;
+}
+
+#ainsley {
+    background-image: url(ressources/ainsley.jpg);
+    background-size: 300px;
+}
+
+#yeahboy {
+    background-image: url(ressources/yeahboy.jpg);
+    background-size: 300px;
+}
+
+#puel {
+    background-image: url(ressources/puel.jpg);
+    background-size: 300px;
+}
+
+#jim {
+    background-image: url(ressources/jim.jpg);
+    background-size: 300px;
+}
