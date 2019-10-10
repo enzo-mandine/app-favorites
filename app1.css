@@ -1,5 +1,6 @@
 html {
     font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 nav {
     display: flex;
     height: 5rem;
-    background-color: grey;
+    background-color: #ffffff;
     padding-left: 1rem;
 }
 
@@ -59,10 +60,9 @@ main {
 }
 
 #searchbar {
-    border-radius: 15px;
     width: 600px;
     height: 30px;
-    border: none;
+    border: 1px solid grey;
 }
 
 #search {
@@ -86,10 +86,6 @@ main {
     margin-top: 3rem;
     border-spacing: 5px;
     overflow: hidden;
-}
-
-#browse>tbody {
-    background-color: bisque;
 }
 
 .browse-image {

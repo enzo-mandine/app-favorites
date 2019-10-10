@@ -1,0 +1,138 @@
+html {
+    background-color: #1C3B50;
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#nav1 {
+    display: flex;
+    height: 6rem;
+    background-color: #171A21;
+    padding-left: 1rem;
+}
+
+header {
+    height: 30rem;
+    background-image: url(ressources/headersteam.jpg);
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+main {
+    display: flex;
+}
+
+aside { 
+    width: 20rem;
+    margin-right: 15rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#windows {
+    background-color: 171A21;
+    width: 70rem;
+    height: 30rem;
+    margin-bottom: 10rem;
+    background-image: url(ressources/steamwindows.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#android {
+    width: 20rem;
+    height: 15rem;
+    background-image: url(ressources/steamandroid.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#apple {
+    width: 20rem;
+    height: 15rem;
+    background-image: url(ressources/steamios.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#windowsphone {
+    width: 20rem;
+    height: 15rem;
+    background-image: url(ressources/steamwindosphone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#description {
+    margin-top: 10rem;
+    width: 70rem;
+    height: 30rem;
+    background-color: #171A21;
+}
+
+.textaligncenter {
+    text-align: center;
+}
+
+a {
+    color: whitesmoke;
+}
+
+#home {
+    width: 150px;
+    height: 50px;
+    background-image: url(ressources/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#home:hover {
+    width: 150px;
+    height: 150px;
+    background-image: url(ressources/home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    background-color: grey;
+    padding-top: 2rem;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 10;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover :not(p) :not(div) :not(img) :not(a) {
+    transform: scale(1, 10);
+    transform-origin: top center;
+    transition-duration: 0.7s;
+}
+
+#logo {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#ulaside {
+    list-style: none;
+    color: #66c0f4;
+}
