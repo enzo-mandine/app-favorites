@@ -76,11 +76,14 @@ aside {
 }
 
 #channelrow {
-    height: 30rem;
+    height: 20rem;
     width: 100%;
-    background-color: chocolate;
     margin-bottom: 5rem;
     z-index: -6;
+    background-image: url(ressources/baidu.png);
+    background-size: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .content {
@@ -101,13 +104,11 @@ aside {
 .channel {
     width: 400px;
     height: 239px;
-    background-color: darkgoldenrod;
 }
 
 .games {
     height: 239px;
     width: 170px;
-    background-color: darkkhaki;
 }
 
 #justchatting {
@@ -153,4 +154,48 @@ aside {
 #gtav {
     background-image: url(ressources/gtav.jpg);
     background-position: center;
+}
+
+#channel1 {
+    background-image: url(ressources/chaine1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#channel2 {
+    background-image: url(ressources/chaine2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#channel3 {
+    background-image: url(ressources/chaine3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#channel4 {
+    background-image: url(ressources/chaine4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#download {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#download img {
+    height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.twitchweb {
+    color: black;
+    text-align: center;
+}
+
+.round {
+    border-radius: 50%;
 }
