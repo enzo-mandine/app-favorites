@@ -59,7 +59,7 @@ body {
 }
 
 #app1:hover {
-    width: 1200px;
+    width: 1300px;
     height: 900px;
     background: linear-gradient(#FB000F, #FB000F);
     margin-left: auto;
@@ -85,7 +85,7 @@ body {
 }
 
 #app2:hover {
-    width: 1200px;
+    width: 1300px;
     height: 900px;
     background: linear-gradient(#171A21, #171A21);
     margin-left: auto;
@@ -110,7 +110,7 @@ body {
 }
 
 #app3:hover {
-    width: 1200px;
+    width: 1300px;
     height: 900px;
     background: linear-gradient(#61369F, #61369F);
     margin-left: auto;
