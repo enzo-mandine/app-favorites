@@ -1,0 +1,156 @@
+html {
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    height: 3rem;
+    box-shadow: 0px 2px 5px grey;
+    z-index: 10;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 20rem;
+    background-color: #EFEFF1;
+    z-index: -1;
+}
+
+#home {
+    width: 75px;
+    height: 25px;
+    background-image: url(ressources/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#home:hover {
+    width: 150px;
+    height: 150px;
+    background-image: url(ressources/home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    background-color: grey;
+    padding-top: 2rem;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 10;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover :not(p) :not(div) :not(img) :not(a) {
+    transform: scale(1, 10);
+    transform-origin: top center;
+    transition-duration: 0.7s;
+}
+
+#logotwitch {
+    height: 2rem;
+    margin-top: 0.5%;
+}
+
+#ulnav {
+    list-style: none;
+}
+
+.inline {
+    display: inline;
+    margin-right: 2rem;
+}
+
+#channelrow {
+    height: 30rem;
+    width: 100%;
+    background-color: chocolate;
+    margin-bottom: 5rem;
+    z-index: -6;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 5rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.channel {
+    width: 400px;
+    height: 239px;
+    background-color: darkgoldenrod;
+}
+
+.games {
+    height: 239px;
+    width: 170px;
+    background-color: darkkhaki;
+}
+
+#justchatting {
+    background-image: url(ressources/justchatting.jpg);
+    background-position: center;
+}
+
+#fortnite {
+    background-image: url(ressources/fortnite.jpg);
+    background-position: center;
+}
+
+#lol {
+    background-image: url(ressources/lol.jpg);
+    background-position: center;
+}
+
+#apex {
+    background-image: url(ressources/apex.jpg);
+    background-position: center;
+}
+
+#dofus {
+    background-image: url(ressources/dofus.jpg);
+    background-position: center;
+}
+
+#talkshow {
+    background-image: url(ressources/talkshow.jpg);
+    background-position: center;
+}
+
+#cs {
+    background-image: url(ressources/cs.jpg);
+    background-position: center;
+}
+
+#fifa {
+    background-image: url(ressources/fifa.jpg);
+    background-position: center;
+}
+
+#gtav {
+    background-image: url(ressources/gtav.jpg);
+    background-position: center;
+}
